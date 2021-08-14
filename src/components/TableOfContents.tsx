@@ -21,9 +21,9 @@ const TableOfContents = () => {  //react.fc?
 
     return(
     <div>
-        {loading ? <div> <img src={spinner} alt="spinner"/> </div> : 
+        {loading ? <div> <img src={spinner} className="centered" alt="spinner"/> </div> : 
         <div>
-        <div className="split sleft">
+        <div className="split left">
         <div className="centered">
             <h2>Jane Flex</h2>
             <p>Some text.</p>
