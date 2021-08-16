@@ -1,0 +1,12 @@
+.Main {
+	display: flex;
+	flex-grow: 1;
+	padding: 16px;
+	text-align: center;
+}
+
+@media (max-width: 600px) {
+	.Main {
+		flex-direction: column;
+	}
+}

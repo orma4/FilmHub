@@ -1,0 +1,19 @@
+.Header {
+	height: 50px;
+	background-color: coral;
+	color: white;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-item {
+	display: inline-block;
+	padding: 4px 8px;
+	cursor: pointer;
+}
+
+.nav-item:hover {
+	border-bottom: 1px solid;
+}
