@@ -1,0 +1,17 @@
+
+
+.Favorites {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+
+}
+
+.card {
+	padding: 16px;
+	box-shadow: 2px 4px 8px;
+	margin: 16px;
+   text-align: center;
+   max-width: 300px;
+
+}
