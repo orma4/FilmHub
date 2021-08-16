@@ -1,0 +1,7 @@
+.FilmDetails {
+	padding: 16px;
+}
+.FilmDetails .desc {
+	color: rgba(0, 0, 0, 0.9);
+	font-size: 1.2em;
+}
