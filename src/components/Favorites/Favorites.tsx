@@ -26,7 +26,7 @@ export function Favorites({ films, favorites }: FavoritesProps) {
   );
 
   if (!selectedFilms.length) {
-    // is empty
+    return <strong>No favorites selected yet.</strong>;
   }
 
   return (

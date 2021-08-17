@@ -3,10 +3,10 @@ import "./Sidebar.css";
 
 interface SidebarProps {
   films: IFilm[];
-  onSelect: (uid: string) => void;
+  handleSelect: (uid: string) => void;
 }
 
-export function Sidebar({ films = [], onSelect }: SidebarProps) {
+export function Sidebar({ films = [], handleSelect }: SidebarProps) {
   return (
     <div className="sidebar">
       {films.map((film: IFilm) => {
@@ -14,7 +14,7 @@ export function Sidebar({ films = [], onSelect }: SidebarProps) {
           <div
             key={film.uid}
             className="item"
-            onClick={() => onSelect(film.uid)}
+            onClick={() => handleSelect(film.uid)}
           >
             {film.properties.title}
           </div>

@@ -10,7 +10,7 @@ interface FilmProperties {
 	opening_crawl: string;
   }
   
-  export interface IFilm {
+export interface IFilm {
 	description: string;
 	uid: string;
 	properties: FilmProperties;
@@ -48,7 +48,7 @@ interface FilmProperties {
 	
 	const selectedFilm = films.find((film: IFilm) => film.uid === selectedFilmId);
 
-	function onSelect(uid: string) {
+	function handleSelect(uid: string) {
 		setSelectedFilmId(uid);
 	  }
 
@@ -74,7 +74,7 @@ interface FilmProperties {
 	
 		  {page === 0 && (
 			<Main>
-			  <Sidebar onSelect={onSelect} films={films} />
+			  <Sidebar handleSelect={handleSelect} films={films} />
 			  <FilmDetails
 				toggleFavorite={toggleFavorite}
 				favorites={favorites}
