@@ -1,12 +1,14 @@
 .Main {
 	display: flex;
+	justify-content: flex-start;
 	flex-grow: 1;
 	padding: 16px;
 	text-align: center;
-}
-
-@media (max-width: 600px) {
+  }
+  
+  @media (max-width: 600px) {
 	.Main {
-		flex-direction: column;
+	  flex-direction: column;
 	}
-}
+  }
+  

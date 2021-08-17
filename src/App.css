@@ -1,31 +1,23 @@
 * {
 	box-sizing: border-box;
-}
-
-body {
 	margin: 0;
-}
-
-:root {
+	padding: 0;
+  }
+  
+  :root {
 	--color-primary: blue;
 	--color-secondary: coral;
-}
-
-.App {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-}
-
-button {
-	padding: 4px 8px;
-	border-radius: 4px;
-	cursor: pointer;
-	background-color: var(--color-primary);
-	color: white;
-	text-transform: uppercase;
-}
-
+  }
+  
+  html {
+	font-size: 18px;
+	font-family: "Lato", sans-serif;
+  }
+  
+  .app-container {
+	min-height: 100vh;
+  }
+  
 
 .centered {
 	position: absolute;

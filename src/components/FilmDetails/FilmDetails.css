@@ -1,7 +1,29 @@
-.FilmDetails {
-	padding: 16px;
-}
-.FilmDetails .desc {
-	color: rgba(0, 0, 0, 0.9);
-	font-size: 1.2em;
-}
+.film-details {
+	padding: 16px 100px 16px 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	width: 80%;
+  }
+  
+  .film-details .title {
+	margin-bottom: 20px;
+  }
+  
+  .film-details .desc {
+	max-width: 70%;
+	margin-bottom: 20px;
+  }
+  
+  @media (max-width: 600px) {
+	.film-details {
+	  padding: 20px;
+	  width: 100%;
+	}
+  
+	.film-details .desc {
+	  max-width: 100%;
+	}
+  }
+  
